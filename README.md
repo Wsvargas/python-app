@@ -1,4 +1,5 @@
 # Python Docker App 🐍🚀
+# Deploy in railway: python-app-production-3e0b.up.railway.app
 
 **Python Docker App** is a simple Python application that prints **"Hello from Python!"** to the console. This project is containerized with Docker, making it easy to deploy and run across different environments. 🌍
 

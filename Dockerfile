@@ -1,11 +1,17 @@
-# Usamos una imagen oficial de Python
-FROM python:3.9-slim
+# Dockerfile
+FROM python:latest
 
-# Establecer directorio de trabajo
+# Set working directory
 WORKDIR /app
 
-# Copiar el código fuente al contenedor
-COPY app.py .
+# Copy the application code to the container
+COPY app.py /app/app.py
 
-# Comando para ejecutar el programa
+# Install Flask
+RUN pip install flask
+
+# Expose port 8080 for web access
+EXPOSE 8080
+
+# Run the application
 CMD ["python", "app.py"]
